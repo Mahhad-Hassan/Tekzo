@@ -9,7 +9,7 @@ const CategoryProduct = () => {
     const [searchData,setSearchData] =useState([]);
     const pramas = useParams();
     const category = pramas.category
-    const navigate=useNavigate
+    const navigate=useNavigate();
 
     const getFilterData = async ()=>{
         try {
@@ -26,7 +26,7 @@ const CategoryProduct = () => {
 
     useEffect(()=>{
         getFilterData()
-    },[])
+    },[category])
 
 
 
