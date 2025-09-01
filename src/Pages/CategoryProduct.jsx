@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import loading from "../assets/loading4.webm"
+import Loading from "../assets/Loading4.webm"
 import { useParams } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 import ProductListView from '../components/ProductListView';
@@ -45,7 +45,7 @@ const CategoryProduct = () => {
             ):(
                 <div className='flex items-center justify-center h-[400px]  '>
                     <video muted autoPlay loop >
-                        <source src={loading} type='video/webm' />
+                        <source src={Loading} type='video/webm' />
                     </video>
                 </div>
             )
