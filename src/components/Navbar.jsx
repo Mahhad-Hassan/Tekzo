@@ -121,7 +121,7 @@ const Navbar = ({ location, getLocation, openDropDown, setOpenDropDown }) => {
           <div className="hidden md:block">
        
               <SignedOut>
-                <SignInButton className="bg-red-500 text-white rounded-xl px-4 py-2" />
+                <SignInButton className="bg-red-500 text-white rounded-xl px-4 py-2 cursor-pointer" />
               </SignedOut>
               <SignedIn>
                 <UserButton />
